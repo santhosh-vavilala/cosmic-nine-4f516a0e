@@ -104,7 +104,7 @@ const Index = () => {
           <div className="container max-w-4xl mx-auto text-center space-y-10">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
-                Why This EBook Works
+                Why This E-Book Works
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Most horoscope books are confusing or scary. This one is calm, clear, and written for real life.
