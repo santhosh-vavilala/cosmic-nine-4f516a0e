@@ -62,7 +62,7 @@ const Index = () => {
                   ⚠️ Hurry! This offer ends very soon
                 </p>
 
-                <CTAButton size="large" onClick={() => window.open("#", "_blank")}>
+                <CTAButton size="large" onClick={() => window.location.href = "https://rzp.io/rzp/L1WTiLCe"}>
                   Get Instant Access for ₹9
                 </CTAButton>
 
@@ -202,7 +202,7 @@ const Index = () => {
             <CTAButton
               size="large"
               className={shakeButton ? "animate-shake" : ""}
-              onClick={() => window.open("#", "_blank")}
+              onClick={() => window.location.href = "https://rzp.io/rzp/L1WTiLCe"}
             >
               Unlock My Horoscope for ₹9
             </CTAButton>
@@ -237,7 +237,7 @@ const Index = () => {
             <CountdownTimer />
 
             {/* Final CTA */}
-            <CTAButton size="large" onClick={() => window.open("#", "_blank")}>
+            <CTAButton size="large" onClick={() => window.location.href = "https://rzp.io/rzp/L1WTiLCe"}>
               YES, I WANT THIS FOR ₹9
             </CTAButton>
           </div>
