@@ -104,7 +104,7 @@ const Index = () => {
           <div className="container max-w-4xl mx-auto text-center space-y-10">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
-                Why This Book Works
+                Why This EBook Works
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Most horoscope books are confusing or scary. This one is calm, clear, and written for real life.
@@ -164,7 +164,7 @@ const Index = () => {
                   "Complete zodiac personality for your sign",
                   "Compatibility explained clearly",
                   "Strengths, challenges & growth guidance",
-                  "A book you'll return to all year",
+                  "A Ebook you'll return to all year",
                 ]}
               />
             </div>
@@ -189,7 +189,7 @@ const Index = () => {
                 <br />
                 <span className="text-primary text-glow">Your choices do.</span>
                 <br />
-                This book simply helps you understand yourself better."
+                This EBook simply helps you understand yourself better."
               </p>
             </div>
             <div className="mt-12 h-px w-32 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent" />
