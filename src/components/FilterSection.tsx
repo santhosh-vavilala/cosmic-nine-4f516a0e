@@ -24,7 +24,7 @@ const FilterSection = () => {
             </h3>
             <ul className="space-y-4">
               {perfectFor.map((item, index) => (
-                <li key={index} className="flex items-center gap-3 text-foreground/90">
+                <li key={index} className="flex items-center gap-3 text-foreground">
                   <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-primary" />
                   </div>

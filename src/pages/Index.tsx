@@ -25,7 +25,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <StarBackground />
-      
+
       {/* Main content */}
       <div className="relative z-10">
         {/* HERO SECTION */}
@@ -66,7 +66,7 @@ const Index = () => {
                 </CTAButton>
 
                 {/* Trust badges */}
-                <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-muted-foreground">
+                <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-foreground">
                   <span className="flex items-center gap-1">
                     <Zap className="w-4 h-4 text-primary" />
                     Instant access
@@ -168,7 +168,7 @@ const Index = () => {
             {/* Discount badge */}
             <div className="flex justify-center mt-12">
               <div className="bg-primary/20 border border-primary/50 rounded-full px-6 py-3 animate-pulse">
-                <span className="text-primary font-bold text-lg">
+                <span className="text-primary text-center font-bold text-lg">
                   🏷️ Massive 95% Discount – Today Only
                 </span>
               </div>
@@ -200,7 +200,7 @@ const Index = () => {
               className={shakeButton ? "animate-shake" : ""}
               onClick={() => window.open("#", "_blank")}
             >
-              Unlock My Horoscope for ₹9 ✨
+              Unlock My Horoscope for ₹9
             </CTAButton>
             <p className="text-muted-foreground animate-pulse">
               ⚡ Thousands miss this deal every day
@@ -234,7 +234,7 @@ const Index = () => {
 
             {/* Final CTA */}
             <CTAButton size="large" onClick={() => window.open("#", "_blank")}>
-              YES, I WANT THIS FOR ₹9 🔥
+              YES, I WANT THIS FOR ₹9
             </CTAButton>
           </div>
         </section>
@@ -245,22 +245,22 @@ const Index = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="flex flex-col items-center gap-2">
                 <CreditCard className="w-6 h-6 text-primary" />
-                <span className="text-sm text-muted-foreground">One-time payment</span>
+                <span className="text-sm text-foreground">One-time payment</span>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <Shield className="w-6 h-6 text-primary" />
-                <span className="text-sm text-muted-foreground">No hidden charges</span>
+                <span className="text-sm text-foreground">No hidden charges</span>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <Zap className="w-6 h-6 text-primary" />
-                <span className="text-sm text-muted-foreground">Instant delivery</span>
+                <span className="text-sm text-foreground">Instant delivery</span>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <BookOpen className="w-6 h-6 text-primary" />
-                <span className="text-sm text-muted-foreground">Read at your pace</span>
+                <span className="text-sm text-foreground">Read at your pace</span>
               </div>
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-8">
+            <p className="text-center text-sm text-foreground mt-8">
               Price will return to ₹199 soon
             </p>
           </div>
