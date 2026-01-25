@@ -35,7 +35,7 @@ const ThankYou = () => {
                         <img
                             src={ebookCover}
                             alt="The Complete Horoscope 2026 Ebook"
-                            className="w-1/4 md:w-80 lg:w-96 drop-shadow-2xl box-glow-gold rounded-lg"
+                            className="w-1/2 md:w-80 lg:w-96 drop-shadow-2xl box-glow-gold rounded-lg"
                         />
                     </div>
                     <div className="text-center md:text-left space-y-4">
