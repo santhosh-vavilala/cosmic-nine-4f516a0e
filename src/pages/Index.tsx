@@ -99,7 +99,7 @@ const Index = () => {
         {/* WHY THIS BOOK WORKS */}
         <section className="py-16 md:py-24 px-4">
           <div className="flex justify-center mb-8">
-            <img src={mockUp} alt="Mock up" className="w-80 md:w-80 lg:w-96 drop-shadow-2xl" />
+            <img src={mockUp} alt="Mock up" className="w-90 drop-shadow-2xl" />
           </div>
           <div className="container max-w-4xl mx-auto text-center space-y-10">
             <div className="space-y-4">
