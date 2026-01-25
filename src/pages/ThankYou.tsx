@@ -15,7 +15,7 @@ const ThankYou = () => {
             document.body.removeChild(link);
         };
 
-        // downloadFile();
+        downloadFile();
     }, []);
 
     const handleDownload = () => {
@@ -38,22 +38,23 @@ const ThankYou = () => {
                             className="w-1/2 md:w-80 lg:w-96 drop-shadow-2xl box-glow-gold rounded-lg"
                         />
                     </div>
-                    <div className="text-center md:text-left space-y-4">
+                    <div className="text-center  space-y-4">
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
                             Thank You!
                         </h1>
-                        <p className="text-lg text-muted-foreground">
+                        <p className="text-lg text-foreground">
                             Your download has started automatically. If it doesn't, click the button below.
                         </p>
+                        <div className="text-center mt-8">
+                            <CTAButton onClick={handleDownload} className="inline-flex items-center gap-2">
+                                <Download className="w-5 h-5" />
+                                Download E-Book Again
+                            </CTAButton>
+                        </div>
+
                     </div>
                 </div>
 
-                <div className="text-center mt-8">
-                    <CTAButton onClick={handleDownload} className="inline-flex items-center gap-2">
-                        <Download className="w-5 h-5" />
-                        Download E-Book Again
-                    </CTAButton>
-                </div>
 
                 <p className="text-sm text-muted-foreground">
                     Enjoy your copy of "The Complete Horoscope 2026"
