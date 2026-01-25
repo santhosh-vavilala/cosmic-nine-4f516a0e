@@ -139,12 +139,10 @@
 
 @keyframes pulse-glow {
   0%, 100% { 
-    box-shadow: 0 0 20px hsl(var(--neon-gold) / 0.4), 0 0 40px hsl(var(--neon-gold) / 0.2);
-    transform: scale(1);
+    transform: translateX(-3px);
   }
   50% { 
-    box-shadow: 0 0 40px hsl(var(--neon-gold) / 0.6), 0 0 80px hsl(var(--neon-gold) / 0.4);
-    transform: scale(1.02);
+    transform: translateX(3px);
   }
 }
 
