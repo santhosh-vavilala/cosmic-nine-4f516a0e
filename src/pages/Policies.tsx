@@ -1,15 +1,18 @@
 import React from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 const Policies = () => {
-  const searchParams = new URLSearchParams(window.location.search);
+  const [searchParams] = useSearchParams();
   const section = searchParams.get('section');
 
   React.useEffect(() => {
     if (section) {
-      const element = document.getElementById(section);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 0);
     }
   }, [section]);
 
