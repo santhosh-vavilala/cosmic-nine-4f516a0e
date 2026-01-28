@@ -1,4 +1,18 @@
+import React from 'react';
+
 const Policies = () => {
+  const searchParams = new URLSearchParams(window.location.search);
+  const section = searchParams.get('section');
+
+  React.useEffect(() => {
+    if (section) {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [section]);
+
   return (
     <div className="min-h-screen bg-background text-white py-12">
       <div className="max-w-4xl mx-auto px-4">
@@ -7,7 +21,7 @@ const Policies = () => {
 
         <div className="space-y-8">
           {/* Privacy Policy Section */}
-          <section>
+          <section id="privacy-policy">
             <h2 className="text-3xl font-bold mb-4">Privacy Policy</h2>
             <p className="mb-4 leading-relaxed">
               This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
@@ -108,7 +122,7 @@ const Policies = () => {
           </section>
 
           {/* Refund and Returns Policy */}
-          <section className="border-t border-gray-700 pt-8">
+          <section id="refund-returns" className="border-t border-gray-700 pt-8">
             <h2 className="text-3xl font-bold mb-4">Refund and Returns Policy</h2>
             <p className="mb-4 leading-relaxed">
               Since <a href="https://www.ebooks24.in/" className="text-blue-400 hover:text-blue-300">https://www.ebooks24.in/</a> offers non-tangible irrevocable goods, we do not issue refunds once the order is accomplished. The nature of digital media means that once you have downloaded a product there's no way to 'return' it. All payments at this website are non-refundable.
@@ -119,7 +133,7 @@ const Policies = () => {
           </section>
 
           {/* Shipping & Cancellation */}
-          <section className="border-t border-gray-700 pt-8">
+          <section id="shipping-cancellation" className="border-t border-gray-700 pt-8">
             <h2 className="text-3xl font-bold mb-4">Shipping & Cancellation</h2>
             <p className="mb-4 leading-relaxed">
               Shipping is not applicable on this website as we only sell Digital Products. Your orders will be delivered immediately after the purchase to your email.
@@ -130,7 +144,7 @@ const Policies = () => {
           </section>
 
           {/* Terms & Conditions */}
-          <section className="border-t border-gray-700 pt-8">
+          <section id="terms-conditions" className="border-t border-gray-700 pt-8">
             <h2 className="text-3xl font-bold mb-4">Terms & Conditions</h2>
             <p className="mb-4 leading-relaxed">
               Welcome to <a href="https://www.ebooks24.in/" className="text-blue-400 hover:text-blue-300">https://www.ebooks24.in/</a>
